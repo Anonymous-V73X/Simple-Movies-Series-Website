@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Layouts</title>
+
+  <!-- style css link -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- fontawesome css link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- header section start -->
+
+  <div class="headerX">
+
+    <div class="header-container">
+
+      <div class="logo">
+
+        <h2>Smart Ent&trade;</h2>
+
+
+      </div>
+
+      <div class="nav-links">
+
+        <i href="index.html" class=" fa-solid fa-home">
+          <a href="index.html">Home</a>
+        </i>
+
+        <i href="about.html" class="fa-solid fa-info-circle">
+          <a href="about.html">About</a>
+        </i>
+
+        <i href="services.html" class="fa-solid fa-cogs">
+          <a href="services.html">Services</a>
+        </i>
+
+        <i href="#" class="perma fa-solid fa-envelope">
+          <a href="#">Contacts</a>
+        </i>
+
+        <script>
+          const icons = document.querySelectorAll('i[href]');
+
+          icons.forEach(icon => {
+            icon.addEventListener('click', () => {
+              const href = icon.getAttribute('href');
+              if (href) {
+                window.location.href = href;
+              }
+            });
+          });
+
+        </script>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- header section end -->
+
+  <div class="home">
+    <div class="container">
+      <div class="home-wrapper">
+        <!-- home center start here -->
+
+        <div class="home-left" style="width: 100%;">
+          <div class="home-center-wrapper">
+            <div class="series">
+
+              <div class="di" style="display: flex; justify-content:center;">
+                <h3 class="mini-heading1" style="text-align: center; font-size:24px;">Contact Us</h3>
+              </div>
+
+
+              <div class="series-container" style="justify-content: center; gap:20px;">
+                <div class="series-box" style="width: 500px !important; padding:20px">
+                  <div class="pic">
+
+                  </div>
+
+                  <div class="title" style="font-size:18px">Smart Entertainment</div>
+
+                  <div class="desc" style="font-weight: 400; font-size:15px">
+                    We would love to hear from you! Contact us for any inquiries, feedback, or partnership
+                    opportunities.
+
+                    <br><br>
+                    <strong>Email:</strong> info@smartentertainment.com
+                    <br>
+                    <strong>Phone:</strong> +254 7-451-97023
+
+                    <br><br>
+                    You can also follow us on social media for the latest updates, behind-the-scenes content, and
+                    exciting announcements:
+
+                    <br><br>
+                    <strong>Telegram:</strong> <a href="https://t.me/alekiesbot">facebook.com/smartentertainment</a>
+                    <br>
+                    <strong>Twitter:</strong> <a
+                      href="https://twitter.com/smartentertainment">twitter.com/smartentertainment</a>
+                    <br>
+                    <strong>Instagram:</strong> <a
+                      href="https://www.instagram.com/smartentertainment">instagram.com/smartentertainment</a>
+
+                    <br><br>
+                    We value your input and strive to provide the best possible entertainment experience. Don't hesitate
+                    to reach out to
+                    us. We look forward to connecting with you!
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- home right end -->
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+
+  <!-- home section end -->
+
+
+  <div class="co"
+    style="display: flex; width:100%; justify-content:center; align-items:center; padding-left:0.5%; padding-right:0.5%;">
+    <div class="footer">
+      <b style="font-size: 24px; margin-right:4px; font-weight:500; ">&copy;</b> 2023 Alex | All rights reserved.
+    </div>
+  </div>
+
+
+</body>
+
+</html>
