@@ -99,27 +99,61 @@
                     opportunities.
 
                     <br><br>
-                    <strong>Email:</strong> info@smartentertainment.com
-                    <br>
-                    <strong>Phone:</strong> +254 7-451-97023
 
-                    <br><br>
-                    You can also follow us on social media for the latest updates, behind-the-scenes content, and
-                    exciting announcements:
 
-                    <br><br>
-                    <strong>Telegram:</strong> <a href="https://t.me/alekiesbot">facebook.com/smartentertainment</a>
-                    <br>
-                    <strong>Twitter:</strong> <a
-                      href="https://twitter.com/smartentertainment">twitter.com/smartentertainment</a>
-                    <br>
-                    <strong>Instagram:</strong> <a
-                      href="https://www.instagram.com/smartentertainment">instagram.com/smartentertainment</a>
 
-                    <br><br>
-                    We value your input and strive to provide the best possible entertainment experience. Don't hesitate
-                    to reach out to
-                    us. We look forward to connecting with you!
+                    <form action="https://formsubmit.co/4b39027887b0f0e6889a8ede5644e855" method="POST">
+                      <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="Name" placeholder="Enter Name" required />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input type="email" class="form-control" name="Email" placeholder="Enter Email" required />
+                      </div>
+                      <div class="form-group col-md-12">
+                        <input type="text" class="form-control" name="Subject" placeholder="Enter Subject" required />
+                      </div>
+                      <div class="form-group col-md-12">
+                        <textarea name="Message" class="form-control" rows="5"
+                          placeholder="Enter your message here" required></textarea>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <button type="submit" class="btn" onclick="delaySubmit(event)">Send Message</button>
+
+
+
+
+
+                        <script>
+                          function delaySubmit(event) {
+                            event.preventDefault(); // Prevent the form from submitting immediately
+
+                            const form = document.querySelector('form'); 
+
+                            if (!form.checkValidity()) {
+                              // Validating form
+                              alert('Please fill in all the required fields correctly.'); 
+                              
+                              return;
+
+                            }
+
+                            alert('Thank you for your message.'); // Display a confirmation message
+
+                            setTimeout(function () {
+                              form.submit(); 
+                            }, 5000);
+                          }
+
+                        </script>
+
+
+
+
+
+
+
+                      </div>
+                    </form>
 
                   </div>
                 </div>
